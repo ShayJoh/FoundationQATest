@@ -19,6 +19,7 @@ l2 = [1,1,1,2,3,3,4,5,5,6,7,7]
 # amount of times they appear in collections.Counter(a).items() is equal to 1
 # ie, print only the numbers that have no duplicates.
 
-uniq = [item for item, count in collections.Counter(l2).items() if count == 1]
+uniq = [item for item, count in collections.Counter(l2).items() 
+       if count == 1]
 
 print("The following values are unique: ", uniq)
